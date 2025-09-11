@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { ScheduleTestStack } from '../lib/schedule-test-stack';
+import { ScheduleAppStack } from '../lib/schedule-app-stack';
 
 const app = new cdk.App();
-new ScheduleTestStack(app, 'ScheduleTestStack', {
-  /* If you don't specify 'env', this stack will be environment-agnostic.
+new ScheduleAppStack(app, 'ScheduleAppStack', {
+  /* If you don't specify 'env', this stack will be environment-agnostic.S
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
 
